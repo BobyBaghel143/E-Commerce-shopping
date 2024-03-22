@@ -1,0 +1,119 @@
+:root {
+  --blue-gray: #ecf0f1;
+  --pale-blue: #2c3e50;
+  --mid-gray: #999;
+  --jean-blue: #3b5875;
+  --light-blue: #95afc0;
+  --sky-blue: #dff9fb;
+  --dark-sky-blue: #c7ecee;
+  --dark-gray: #ccc;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+#header {
+  background-color: var(--blue-gray);
+  padding: 1.25rem 0;
+}
+
+#header .header-wrapper .logo {
+  font-size: 1.35rem;
+  line-height: 1.5;
+}
+
+#header .header-wrapper .logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2da306;
+  letter-spacing: 5px;
+  /* text-decoration: underline; */
+}
+
+#header .header-wrapper .user-actions {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  gap: 1rem;
+}
+
+#header .header-wrapper .user-actions a {
+  color: rgb(222, 88, 88);
+  text-decoration: none;
+}
+
+#header .header-wrapper .user-actions a:hover {
+  text-decoration: underline;
+}
+
+#header .header-wrapper .user-actions .user-intro {
+  /* font-size: 1.1rem; */
+  /* margin-left: 1.5rem; */
+  cursor: pointer;
+  color: rgb(0, 51, 255);
+}
+
+#header .header-wrapper .user-actions .user-intro:hover {
+  text-decoration: underline;
+}
+
+#header .header-wrapper .user-actions .logout-btn {
+  cursor: pointer;
+  margin-left: 1.5rem;
+  color: rgb(207, 52, 242);
+}
+
+#header .header-wrapper .user-actions .logout-btn:hover {
+  text-decoration: underline;
+}
+
+.clear-filter {
+  margin-top: 1rem;
+}
+
+.price-filter .price-filter-select > div {
+  margin-bottom: 0.5rem;
+}
+
+.loader-backdrop {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+}
+
+.loader2 > div {
+  border: 5px solid var(--jean-blue);
+  height: 5rem;
+  width: 5rem;
+  border-top: 5px solid #f0eeeb;
+  border-bottom: 5px solid #f0eeeb;
+  border-radius: 50%;
+  animation: spinner2 2s linear infinite;
+}
+
+@keyframes spinner2 {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

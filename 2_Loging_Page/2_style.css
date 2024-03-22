@@ -1,0 +1,70 @@
+:root {
+    --blue-gray: #ecf0f1;
+    --pale-blue: #2c3e50;
+    --mid-gray: #999;
+    --jean-blue: #3b5875;
+    --light-blue: #95afc0;
+    --sky-blue: #dff9fb;
+    --dark-sky-blue: #c7ecee;
+    --dark-gray: #ccc;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+#header {
+    background-color: var(--blue-gray);
+    padding: 1.25rem 0;
+}
+
+#header .header-wrapper .logo {
+    font-size: 1.35rem;
+    line-height: 1.5;
+}
+
+#header .header-wrapper .logo a {
+    color: black;
+    letter-spacing: 5px;
+}
+
+.home-title {
+    font-size: 3.5rem;
+    margin-top: 5rem;
+    letter-spacing: 1rem;
+}
+
+.login-wrapper {
+    width: 600px;
+    margin: 50px auto;
+}
+
+.login-wrapper h4 {
+    font-size: 2rem;
+    letter-spacing: 4px;
+}
+
+.input-group {
+    margin-bottom: 1.5rem;
+}
+
+
+.input-group .btn {
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.login-wrapper .signup-btn {
+    cursor: pointer;
+    color: black;
+    padding: 1rem;
+}
+
+.login-wrapper .signup-btn:hover {
+    text-decoration: underline;
+}
